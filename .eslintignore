@@ -1,0 +1,10 @@
+/build
+/config
+*.css
+*.svg
+webpack.*
+*.d.ts
+*.test.tsx
+**/*.test.tsx
+*.json
+.env.development

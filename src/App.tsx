@@ -1,5 +1,7 @@
+import MainRouter from './routers/MainRouter';
+
 function App(): JSX.Element {
-  return (<>Prueba</>);
+  return (<MainRouter />);
 }
 
 export default App;

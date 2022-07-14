@@ -1,7 +1,7 @@
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
 } from 'react-router-dom';
 import App from './App';
 import { store } from './store/store';

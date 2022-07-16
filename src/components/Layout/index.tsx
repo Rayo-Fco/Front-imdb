@@ -20,10 +20,6 @@ const navItems = [
     id: 1,
     name: 'inicio',
     path: '',
-  }, {
-    id: 2,
-    name: 'Home',
-    path: 'home',
   },
 ];
 
@@ -45,7 +41,6 @@ function Layout() {
           <ListItem key={item.id} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
               <Link key={item.id} to={item.path}><ListItemText primary={item.name} /></Link>
-
             </ListItemButton>
           </ListItem>
         ))}
@@ -55,11 +50,12 @@ function Layout() {
 
   return (
     <Box sx={{ display: 'flex' }}>
-      <AppBar component="nav">
+      <AppBar component="nav" sx={{ background: 'black' }}>
         <Toolbar>
           <IconButton
             color="inherit"
             aria-label="open drawer"
+            data-testid="open-drawer"
             edge="start"
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: 'none' } }}

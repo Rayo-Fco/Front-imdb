@@ -1,2 +1,8 @@
 node_modules
+build
+.DS_Store
+coverage/
+coverage
+.env
 .env.development
+__snapshots__/

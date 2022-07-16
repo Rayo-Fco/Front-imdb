@@ -4,6 +4,7 @@ import { routerMiddleware } from 'react-router-redux';
 import createSagaMiddleware from 'redux-saga';
 import { createBrowserHistory } from 'history';
 import rootReducer from './rootReducer';
+import rootSaga from './rootSagas';
 
 export const history = createBrowserHistory();
 
@@ -14,4 +15,4 @@ const composeEnhancers = process.env.NODE_ENV !== 'production'
     || compose : compose;
 const enhancer = composeEnhancers(applyMiddleware(...middlewares));
 export const store = createStore(rootReducer, enhancer);
-// sagaMiddleware.run();
+sagaMiddleware.run(rootSaga);

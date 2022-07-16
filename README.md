@@ -16,6 +16,7 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
+    <li><a href="#directory">Directory</a></li>
     <li><a href="#environments">Environments</a></li>
   </ol>
 </details>

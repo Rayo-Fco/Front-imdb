@@ -1,12 +1,11 @@
 import App from './App';
-import {
-  render,
-} from '@testing-library/react';
+import { act, render,screen, waitFor } from './config/test-utils';
 describe('<App />', () => {
 
-  test('01. App matches snapshot correctly', () => {
-    const component = render(<App />);
-    expect(component.asFragment()).toMatchSnapshot();
+  it('01. App matches snapshot correctly', () => {
+    act(()=>{render(<App />)})
+    
+    waitFor(() => expect(screen.findByText('imbd')).toBeInTheDocument())
 
   });
 });

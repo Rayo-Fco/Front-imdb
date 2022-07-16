@@ -40,7 +40,10 @@
         ],
         "react/jsx-uses-react": "off",
         "no-undef": "off",
-        "react/no-children-prop": "off"
+        "react/no-children-prop": "off",
+        "default-param-last": 0,
+        "import/prefer-default-export": 0,
+        "import/no-unresolved": 0
     },
     "settings": {
         "import/resolver": {
